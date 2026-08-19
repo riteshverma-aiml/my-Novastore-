@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | NovaStore</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                Nova<span>Store</span>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+
+            </ul>
+
+            <div class="nav-icons">
+
+                <span>🔍</span>
+
+                <span>❤</span>
+
+                <span>🛒</span>
+
+                <button>Login</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE HEADING ================= -->
+
+    <section class="product-page">
+
+        <h1>Our Products</h1>
+
+        <p>Discover our premium fashion and home collection.</p>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="filter-section">
+
+        <button class="filter-btn active" onclick="filterProducts('all')">All</button>
+
+        <button class="filter-btn" onclick="filterProducts('fashion')">Fashion</button>
+
+        <button class="filter-btn" onclick="filterProducts('electronics')">Electronics</button>
+
+        <button class="filter-btn" onclick="filterProducts('furniture')">Furniture</button>
+
+        <button class="filter-btn" onclick="filterProducts('lighting')">Lighting</button>
+
+        <button class="filter-btn" onclick="filterProducts('kitchen')">Kitchen</button>
+
+    </section>
+
+    <section class="all-products">
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+
+            <div class="product-card fashion" >
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Premium T-Shirt</h3>
+
+                    <p class="price">₹999 <span>₹1499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="product-card fashion">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Running Shoes</h3>
+
+                    <p class="price">₹2499 <span>₹3499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Smart Watch</h3>
+
+                    <p class="price">₹3499 <span>₹4999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="product-card furniture">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Luxury Chair</h3>
+
+                    <p class="price">₹5999 <span>₹7499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 5 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Apple Smart Watch</h3>
+
+                    <p class="price">₹12,999 <span>₹15,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 6 -->
+
+            <div class="product-card fashion">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Nike Sneakers</h3>
+
+                    <p class="price">₹4,999 <span>₹6,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 7 -->
+
+            <div class="product-card fashion">
+
+                <span class="sale">30% OFF</span>
+
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Women's Jacket</h3>
+
+                    <p class="price">₹2,499 <span>₹3,599</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 8 -->
+
+            <div class="product-card furniture">
+
+                <span class="sale">TRENDING</span>
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Luxury Sofa</h3>
+
+                    <p class="price">₹19,999 <span>₹24,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 9 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>MacBook Air</h3>
+
+                    <p class="price">₹84,999 <span>₹94,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 10 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">BEST</span>
+
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p class="price">₹3,999 <span>₹5,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 11 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Luxury Watch</h3>
+
+                    <p class="price">₹5,999 <span>₹7,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 12 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Gaming Keyboard</h3>
+
+                    <p class="price">₹2,499 <span>₹3,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 13 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>iPhone 16</h3>
+
+                    <p class="price">₹79,999 <span>₹89,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 14 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Samsung Galaxy</h3>
+
+                    <p class="price">₹54,999 <span>₹64,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 15 -->
+
+            <div class="product-card fashion">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Sports Shoes</h3>
+
+                    <p class="price">₹3,499 <span>₹4,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 16 -->
+
+            <div class="product-card fashion">
+
+                <span class="sale">BEST</span>
+
+                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Men's Hoodie</h3>
+
+                    <p class="price">₹1,799 <span>₹2,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 17 -->
+
+            <div class="product-card kitchen">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Dining Table</h3>
+
+                    <p class="price">₹14,999 <span>₹18,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 18 -->
+
+            <div class="product-card furniture">
+
+                <span class="sale">TRENDING</span>
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Luxury Bed</h3>
+
+                    <p class="price">₹29,999 <span>₹35,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 19 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>LED Table Lamp</h3>
+
+                    <p class="price">₹1,499 <span>₹2,199</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 20 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Modern Chandelier</h3>
+
+                    <p class="price">₹6,999 <span>₹8,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 21 -->
+
+            <div class="product-card kitchen">
+
+                <span class="sale">BEST</span>
+
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Non-Stick Cookware Set</h3>
+
+                    <p class="price">₹3,999 <span>₹5,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 22 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Bluetooth Speaker</h3>
+
+                    <p class="price">₹2,999 <span>₹4,299</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 23 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Classic Wrist Watch</h3>
+
+                    <p class="price">₹4,999 <span>₹6,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 24 -->
+
+            <div class="product-card fashion">
+
+                <span class="sale">TRENDING</span>
+
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Women's Handbag</h3>
+
+                    <p class="price">₹2,799 <span>₹3,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 25 -->
+
+            <div class="product-card accessories">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Gaming Laptop</h3>
+
+                    <p class="price">₹79,999 <span>₹89,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 26 -->
+
+            <div class="product-card  accessories">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>4K Monitor</h3>
+
+                    <p class="price">₹18,999 <span>₹22,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 27 -->
+
+            <div class="product-card  accessories">
+
+                <span class="sale">BEST</span>
+
+                <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Wireless Earbuds</h3>
+
+                    <p class="price">₹3,999 <span>₹5,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 28 -->
+
+            <div class="product-card electronics">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Smart LED TV</h3>
+
+                    <p class="price">₹39,999 <span>₹46,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 29 -->
+
+            <div class="product-card electronics">
+
+                <span class="sale">TRENDING</span>
+
+                <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Double Door Refrigerator</h3>
+
+                    <p class="price">₹34,999 <span>₹41,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 30 -->
+
+            <div class="product-card electronics">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Front Load Washing Machine</h3>
+
+                    <p class="price">₹27,999 <span>₹33,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 31 -->
+
+            <div class="product-card electronics">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Coffee Machine</h3>
+
+                    <p class="price">₹7,999 <span>₹9,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 32 -->
+
+            <div class="product-card electronics">
+
+                <span class="sale">SALE</span>
+
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Air Fryer</h3>
+
+                    <p class="price">₹5,499 <span>₹6,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 33 -->
+
+            <div class="product-card furniture">
+
+                <span class="sale">BEST</span>
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Premium Sofa Set</h3>
+
+                    <p class="price">₹24,999 <span>₹31,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 34 -->
+
+            <div class="product-card fashion">
+
+                <span class="sale">NEW</span>
+
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Designer Wall Decor</h3>
+
+                    <p class="price">₹2,999 <span>₹4,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 35 -->
+
+            <div class="product-card furniture">
+
+                <span class="sale">HOT</span>
+
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Office Chair</h3>
+
+                    <p class="price">₹8,999 <span>₹11,499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <!-- Product 36 -->
+
+            <div class="product-card electronics">
+
+                <span class="sale">LIMITED</span>
+
+                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=80">
+
+                <div class="product-info">
+
+                    <h3>Luxury Bedside Lamp</h3>
+
+                    <p class="price">₹3,499 <span>₹4,999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

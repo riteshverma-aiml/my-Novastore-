@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaStore</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Nova<span>Store</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="about.html">Contact</a></li>
+
+            </ul>
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-regular fa-heart"></i>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <button>Login</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Upgrade Your Lifestyle</h1>
+
+            <p>
+                Discover premium fashion, stylish home decor,
+                furniture and modern essentials at unbeatable prices.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="shop-btn">Shop Now</a>
+
+                <a href="#" class="learn-btn">Explore More</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURED CATEGORIES ================= -->
+
+    <div class="category-container">
+
+        <a href="fashion.html" class="category-card">
+            <div class="icon">👕</div>
+            <h3>Fashion</h3>
+            <p>Latest Fashion Collection</p>
+        </a>
+
+        <a href="furniture.html" class="category-card">
+            <div class="icon">🛋️</div>
+            <h3>Furniture</h3>
+            <p>Modern furniture for every home.</p>
+        </a>
+
+        <a href="lighting.html" class="category-card">
+            <div class="icon">💡</div>
+            <h3>Lighting</h3>
+            <p>Modern lights for your home.</p>
+        </a>
+
+        <a href="accessories.html" class="category-card">
+            <div class="icon">⌚</div>
+            <h3>Accessories</h3>
+            <p>Watches & More</p>
+        </a>
+
+        <a href="home-decor.html" class="category-card">
+            <div class="icon">🏠</div>
+            <h3>Home-Decor</h3>
+            <p>Beautiful Decoration Items</p>
+        </a>
+
+        <a href="electronics.html" class="category-card">
+            <div class="icon">💻</div>
+            <h3>Electronics</h3>
+            <p>Latest Gadgets & Accessories</p>
+        </a>
+
+        <a href="luxury.html" class="category-card">
+            <div class="icon">💎</div>
+            <h3>Luxury Collection</h3>
+            <p>Explore Premium Collection</p>
+        </a>
+
+        <a href="kitchen.html" class="category-card">
+            <div class="icon">🍳</div>
+            <h3>Kitchen</h3>
+            <p>Modern Kitchen Appliances & Cookware</p>
+        </a>
+
+    </div>
+
+    <!-- ================= TRENDING PRODUCTS ================= -->
+
+    <section class="products">
+
+        <h2 class="section-title">Trending Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                    alt="T Shirt">
+
+                <div class="product-info">
+
+                    <h3>Premium T-Shirt</h3>
+
+                    <p class="price">₹999 <span>₹1499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                    <button class="cart-btn" onclick="addToCart(
+'Luxury Watch',
+5999,
+'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=700'
+)">
+                        Add To Cart
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+                    alt="Shoes">
+
+                <div class="product-info">
+
+                    <h3>Running Shoes</h3>
+
+                    <p class="price">₹2499 <span>₹3499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80"
+                    alt="Chair">
+
+                <div class="product-info">
+
+                    <h3>Luxury Chair</h3>
+
+                    <p class="price">₹5999 <span>₹7499</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=700&q=80"
+                    alt="Watch">
+
+                <div class="product-info">
+
+                    <h3>Smart Watch</h3>
+
+                    <p class="price">₹3499 <span>₹4999</span></p>
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <a href="product-detail.html" class="buy-btn">View Details</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why-us">
+
+        <h2 class="section-title">Why Choose NovaStore?</h2>
+
+        <div class="why-container">
+
+            <div class="why-card">
+
+                <div class="why-icon">🚚</div>
+
+                <h3>Fast Delivery</h3>
+
+                <p>
+                    Get your favourite products delivered quickly and safely.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-icon">💳</div>
+
+                <h3>Secure Payment</h3>
+
+                <p>
+                    Trusted and secure payment options for every customer.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-icon">⭐</div>
+
+                <h3>Premium Quality</h3>
+
+                <p>
+                    We provide only high quality fashion and home products.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-icon">📞</div>
+
+                <h3>24/7 Support</h3>
+
+                <p>
+                    Our support team is always ready to help you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CUSTOMER REVIEWS ================= -->
+
+    <section class="reviews">
+
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="review-container">
+
+            <div class="review-card">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+
+                <h3>Rahul Sharma</h3>
+
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p>
+                    Amazing quality products. Delivery was fast and the packaging
+                    was excellent. Highly recommended!
+                </p>
+
+            </div>
+
+            <div class="review-card">
+
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+
+                <h3>Priya Verma</h3>
+
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p>
+                    Beautiful collection. The clothes look exactly like the photos.
+                    I will definitely shop again.
+                </p>
+
+            </div>
+
+            <div class="review-card">
+
+                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Customer">
+
+                <h3>Aman Singh</h3>
+
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p>
+                    Premium furniture at affordable prices. Customer support was
+                    very helpful.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TRENDING COLLECTION ================= -->
+
+    <section class="trending">
+
+        <h2 class="section-title">Trending Collection</h2>
+
+        <div class="trending-container">
+
+            <div class="trend-card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="">
+                <div class="trend-content">
+                    <h3>Men Collection</h3>
+                    <a href="products.html">Explore →</a>
+                </div>
+            </div>
+
+            <div class="trend-card">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600" alt="">
+                <div class="trend-content">
+                    <h3>Women Fashion</h3>
+                    <a href="products.html">Explore →</a>
+                </div>
+            </div>
+
+            <div class="trend-card">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600" alt="">
+                <div class="trend-content">
+                    <h3>Luxury Furniture</h3>
+                    <a href="products.html">Explore →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>Subscribe To Our Newsletter</h2>
+
+            <p>
+                Get the latest offers, discounts and new arrivals directly in your inbox.
+            </p>
+
+            <form>
+
+                <input type="email" placeholder="Enter your email">
+
+                <button>Subscribe</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>NovaStore</h2>
+
+                <p>
+                    Premium shopping destination for fashion,
+                    furniture and home essentials.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Categories</h3>
+
+                <a href="#">Fashion</a>
+                <a href="#">Furniture</a>
+                <a href="#">Kitchen</a>
+                <a href="#">Decor</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 NovaStore. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
